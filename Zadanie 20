@@ -1,0 +1,17 @@
+def analyze_data(data):
+    if isinstance(data, list):
+        return "The data is a list with {} elements".format(len(data))
+    elif isinstance(data, tuple):
+        return "The data is a tuple with {} elements".format(len(data))
+    elif isinstance(data, dict):
+        return "The data is a dictionary with {} key-value pairs".format(len(data))
+    else:
+        return "Unknown data structure"
+
+list_data = [1, 2, 3, 4, 5]
+tuple_data = (10, 20, 30)
+dict_data = {'a': 1, 'b': 2, 'c': 3}
+
+print(analyze_data(list_data))  
+print(analyze_data(tuple_data))  
+print(analyze_data(dict_data)) 

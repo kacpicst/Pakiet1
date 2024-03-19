@@ -1,0 +1,10 @@
+def generate_numbers(n):
+    for i in range(n):
+        print(f"Generating {i}")  #Ta linia zostanie wykonana tylko w momencie użycia wartości z generatora
+        yield i
+
+numbers = generate_numbers(5)
+for num in numbers:
+    print(num)
+
+# W tym momencie wypisze: [Generating 0, 1, 2, 3, 4]

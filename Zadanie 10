@@ -1,0 +1,4 @@
+even_numbers_generator = (x for x in range(0, 1000000, 2))
+
+for i in range(10):
+    print(next(even_numbers_generator))

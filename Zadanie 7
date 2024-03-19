@@ -1,0 +1,5 @@
+words = ["jabłko", "banan", "mandarynka", "grejpfrut", "kiwi", "arbuz"]
+
+filtered_words = list(filter(lambda word: len(word) > 5, words))
+
+print(filtered_words)

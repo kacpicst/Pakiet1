@@ -1,0 +1,13 @@
+def make_multiplier(factor):
+    
+    def multiplier(x):
+        return x * factor
+    return multiplier
+
+multiply_by_3 = make_multiplier(3)
+result = multiply_by_3(5) 
+print(result)  
+
+multiply_by_10 = make_multiplier(10)
+result = multiply_by_10(5)
+print(result)  

@@ -1,0 +1,8 @@
+from functools import partial
+
+from operator import mul
+
+multiply_by_3 = partial(mul, 3)
+
+result = multiply_by_3(5)
+print(result)  # Output: 15

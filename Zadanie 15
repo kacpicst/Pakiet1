@@ -1,0 +1,12 @@
+def add(x):
+    
+    def inner(y):
+        return x + y
+    return inner
+
+add_5 = add(5)  # Pierwszy argument 5
+result = add_5(10)  # Drugi argument 10
+print(result) 
+
+result = add(5)(10)
+print(result) 
